@@ -1,0 +1,35 @@
+    <!DOCTYPE html>
+    <lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vue3 less1</title>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+        <script type="module" src="script.js"></script>
+    </head>
+        <div id="app1">
+            <p>{{ counter }}</p>
+            <button @click="counter++">Увеличить значение</button>
+        </div>
+    
+
+        <div id="app2">
+            <greeting-component></greeting-component>
+        </div>
+
+<!-- скрипт для арр1 -->
+        <script>
+            const app = Vue.createApp({
+                data() {
+                    return {
+                        counter: 0  
+                    };
+                }
+            });
+    
+            app.mount('#app1');  
+        </script>
+    
+
+</body>
+</html>
