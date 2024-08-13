@@ -14,9 +14,14 @@
     </div>
   </template>
   <script>
-  
+  import GreetingComponent from './components/GreetingComponent.vue';
+  import MessageComponent from './components/MessageComponent.vue';
 
 export default {
+components: {
+GreetingComponent, MessageComponent
+},
+
   name: 'App',
   data() {
     return {
